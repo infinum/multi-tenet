@@ -1,9 +1,12 @@
 {
 	"scripts": {
 		"build": "webpack",
-		"dev": "npm run build && node ./dist/main.js"
+		"dev": "npm run build >/dev/null && node ./dist/main.js"
 	},
 	"dependencies": {
+		"chalk": "^4.1.1",
+		"force-symlink": "^0.0.2",
+		"lodash.uniq": "^4.5.0",
 		"webpack": "^5.37.1",
 		"webpack-cli": "^4.7.0",
 		"yargs": "^17.0.1"

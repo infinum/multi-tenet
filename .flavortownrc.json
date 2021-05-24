@@ -1,0 +1,11 @@
+{
+    "flavors": [
+        "vanilla"
+    ],
+    "envs": [
+        "development",
+        "production"
+    ],
+    "defaultFlavor": "vanilla",
+    "defaultEnv": "development"
+}

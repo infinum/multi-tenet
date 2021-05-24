@@ -1,6 +1,0 @@
-{
-	"flavours": ["a"],
-	"envs": ["development"],
-	"defaultFlavour": "a",
-	"defaultEnv": "development"
-}

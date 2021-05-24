@@ -1,2 +1,6 @@
 dist/
 node_modules/
+### FLAVORTOWN CACHE START ###
+src/test.txt
+test.txt
+### FLAVORROWN CACHE END ###
