@@ -1,7 +1,14 @@
 import chalk from 'chalk';
 import fs from 'fs';
 import { promisify } from 'util';
-import { CACHE_PATH, CONFIG_PATH, DEFAULT_CONFIG, SHARED_DIR } from './consts';
+import {
+	CACHE_PATH,
+	CONFIG_PATH,
+	DEFAULT_CONFIG,
+	HEADER_CACHE_END,
+	HEADER_CACHE_START,
+	SHARED_DIR,
+} from './consts';
 import { resolve } from 'path';
 import forceSymlink from 'force-symlink';
 import uniq from 'lodash.uniq';
@@ -68,11 +75,11 @@ export async function createCache(files = []) {
 
 	const affectedFiles = uniq(files);
 
-	let cache = '### FLAVORTOWN CACHE START ###\n';
+	let cache = `${HEADER_CACHE_START}\n`;
 
 	cache += affectedFiles.join('\n');
 
-	cache += '\n### FLAVORROWN CACHE END ###\n';
+	cache += `${HEADER_CACHE_END}\n`;
 
 	if (await exists(gitignore)) {
 		await appendFile(gitignore, cache);

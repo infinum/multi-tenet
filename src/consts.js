@@ -5,6 +5,8 @@ export const PARENT_DIR = 'flavortown';
 export const SHARED_DIR = 'shared';
 export const LOGFILE_PATH = path.join(__dirname, '..', 'flavortown.log');
 export const CACHE_PATH = path.join(__dirname, '..', 'flavortown.cache');
+export const HEADER_CACHE_START = '### FLAVORTOWN CACHE START ###';
+export const HEADER_CACHE_END = '### FLAVORTOWN CACHE END ###';
 
 export const DEFAULT_CONFIG = {
 	flavors: ['vanilla'],
